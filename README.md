@@ -8,7 +8,7 @@ A modern and responsive personal portfolio website built to showcase my skills, 
 
 ## 📸 Preview
 
-> Add screenshots of your portfolio here.
+![Portfolio Preview](preview.png)
 
 ---
 
