@@ -1,0 +1,400 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    padding:20px 10%;
+    z-index:999;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header h1{
+    margin-left: 10%;
+}
+header .head{
+    margin-right: 10%;
+}
+header .head a{
+     margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+   
+    
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgb(195, 217, 246);
+    /* padding-left: 20%;
+    padding-right: 20%;
+    padding-top:100px; */
+    min-height:100vh;
+    height:auto;
+    padding:120px 10% 60px;
+}
+main .right{
+    width: 400px;
+    height: 400px;
+}
+.right img{
+      width:100%;
+    max-width:400px;
+    height:auto;
+    border-radius:50%;
+    object-fit:cover;
+}
+main .left p{
+   font-size: 30px;
+    color:#00b894;
+}
+main .left h1{
+   color: rgb(25, 25, 43);
+   font-size:60px;
+    font-weight:700;
+    line-height:1.2;
+}
+main .left h4{
+    font-size:28px;
+    font-weight:500;
+    color:#555;
+}
+main .left .btn{
+  background-color: rgb(152, 235, 196);
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  width:fit-content;
+  border-radius: 20px;
+  
+}
+.icons{
+    display:flex;
+    gap:20px;
+    margin:25px 0;
+}
+
+.icons a{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#00b894;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.icons a:hover{
+    transform:translateY(-5px);
+    background:#222;
+}
+.aboutme{
+  background-color: rgb(231, 244, 249);
+}
+.aboutme h1,
+.skillsAbities h1,
+.myservices h1,
+.contact h1{
+    text-align:center;
+    margin-bottom:40px;
+    font-weight:700;
+}
+.aboutme .about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    padding-inline:8%;
+  
+}
+.aboutme .about .info{
+
+    margin-top: 10px;
+}
+.aboutme .about .info h2 span{
+     color: rgb(110, 250, 180);
+}
+
+.aboutme .about .data{
+    width: 40%;
+     margin-top: 10px;
+}
+
+.info,
+.data{
+    margin-top: 20px;
+}
+.skillsAbities{
+background-color: rgb(62, 62, 88);
+display: flex;
+justify-content: space-between;
+align-content: center;
+flex-direction: column;
+position: relative;
+}
+.skillsAbities h1{
+ color: white;
+}
+.skillsAbities h1 .abilities{
+color: rgb(128, 237, 195);
+ }
+.skillsAbities h1 .sign{
+ border-bottom: 2px solid rgb(128, 237, 195);
+ }
+.skillsAbities .allskills{
+background-color: rgba(52, 52, 79, 0.559);
+display: flex;
+justify-content: space-between;
+align-content: center;
+ }
+.skillsAbities .allskills .skill{
+   /* width: 200px;
+   height: 200px; */
+   margin: 5px;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 5, 0.879);
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+ .skillsAbities .allskills .skill:hover{
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+ }
+ .myservices{
+    background-color: rgb(219, 246, 242);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+ }
+
+ .myservices h1{
+ color: rgba(52, 52, 79, 0.559);
+
+}
+
+.myservices .services{
+/* background-color: rgba(52, 52, 79, 0.559); */
+display: flex;
+justify-content: space-between;
+align-content: center;
+ }
+.myservices .services .service{
+   /* width: 200px;
+   height: 200px; */
+   margin: 5px;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 5, 0.879);
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+ .myservices .services .service :hover{
+  box-shadow:4 lavender ;
+ }
+/* chat gpt */
+ .skill{
+    background:#1d1d35;
+    color:white;
+    height:150px;
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    transition:.4s;
+    cursor:pointer;
+    margin:15px;
+}
+
+.skill i{
+    font-size:55px;
+}
+
+.skill:hover{
+    transform:translateY(-10px);
+    background:#4cc9f0;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+.service{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    transition:.4s;
+    margin:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.service i{
+    font-size:45px;
+    color:#00b894;
+    margin-bottom:15px;
+}
+
+.service:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+.contact{
+    background:#f8fbff;
+    padding:80px 10%;
+}
+
+.callme{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+}
+
+.image img{
+    width:100%;
+    max-width:350px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.form{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.form form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.form input,
+.form textarea{
+
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+.form textarea{
+    height:180px;
+    resize:none;
+}
+
+.form input:focus,
+.form textarea:focus{
+    border-color:#00b894;
+}
+
+.form button{
+    width:160px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#00b894;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+.form button:hover{
+    background:#009e7f;
+}
+.right img{
+    width:100%;
+    max-width:420px;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+.btn{
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .head{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        margin:0;
+    }
+
+    .head a{
+        margin:10px;
+    }
+
+    main{
+        text-align:center;
+        padding:120px 20px 50px;
+    }
+
+    .left{
+        order:2;
+    }
+
+    .right{
+        order:1;
+        margin-bottom:30px;
+    }
+
+    .right img{
+        max-width:280px;
+    }
+
+    .about,
+    .callme{
+        text-align:center;
+    }
+
+    .form{
+        margin-top:30px;
+    }
+}
+@media (max-width: 991px){
+
+    .about{
+        text-align:center;
+    }
+
+    .data{
+        margin-top:40px;
+    }
+}
